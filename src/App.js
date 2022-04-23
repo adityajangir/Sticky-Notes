@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route exact path='/notes' element={<Notes/>}/>
           <Route exact path='/create' element={<Create/>}/>
-          <Route exact path='/note/:id' element={<Notedetails/>}/>
+          <Route exact path='/notes/note/:id' element={<Notedetails/>}/>
           <Route exact path='/groups' element={<Groups/>}/>
 
         </Routes>
