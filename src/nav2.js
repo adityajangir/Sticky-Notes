@@ -29,7 +29,7 @@ const Navbar2 = () => {
                 </div> 
                 <div className="mr-2">
                     <button className="ml-2 bg-black text-white p-2 rounded-md font-normal mr-2">
-                        <Link to="/">Home</Link>                         
+                        <Link to="/notes">Home</Link>                         
                     </button>
                     <button className="mr-10 bg-black text-white p-2 rounded-md font-normal">
                         <Link to="/create">

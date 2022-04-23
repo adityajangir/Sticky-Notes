@@ -20,7 +20,7 @@ const Create = () => {
             body: JSON.stringify(note)
         }).then(() => {
             console.log("New Blog Added");
-            Navigate('/');
+            Navigate('/notes');
         })
 
         

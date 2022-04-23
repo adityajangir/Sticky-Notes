@@ -14,7 +14,7 @@ function App() {
         {/* <Dev/> */}
         <Navbar2></Navbar2>
         <Routes>
-          <Route exact path='/' element={<Notes/>}/>
+          <Route exact path='/notes' element={<Notes/>}/>
           <Route exact path='/create' element={<Create/>}/>
           <Route exact path='/note/:id' element={<Notedetails/>}/>
           <Route exact path='/groups' element={<Groups/>}/>
