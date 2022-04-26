@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 
 const useFetch = (url) => {
-    const [notes, setnotes] = useState(null)
+    const [data, setdata] = useState(null)
     const [error, seterror] = useState(null);
 
     useEffect(() => {
@@ -15,7 +15,7 @@ const useFetch = (url) => {
         }) 
         .then((data) => {
             // console.log(data);
-            setnotes(data);
+            setdata(data);
             seterror(null);
         })
         .catch((err) => {
@@ -23,7 +23,7 @@ const useFetch = (url) => {
         })
     }, [url]);
 
-    return {notes, error};
+    return {data, error};
 }
 
 

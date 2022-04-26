@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { v4 as uuid } from 'uuid';
 
 const Create = () => {
 
@@ -12,6 +13,7 @@ const Create = () => {
     const handlesubmit = (e) => {
         e.preventDefault();
         const note = { domain, user, description, grp };
+        note.id = uuid();
         console.log(note);
 
         fetch('http://localhost:8000/notes', {

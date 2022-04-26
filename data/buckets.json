@@ -1,0 +1,12 @@
+{
+    "buckets": [
+      {
+        "name": "Goals/Needs",
+        "id": 111
+      },
+      {
+        "name": "Pain Points",
+        "id": 222
+      }
+    ]
+  }
